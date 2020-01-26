@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <label>Email address</label>
+  <input type="email" [(ngModel)]="email" class="form-control" required>
+  <label>Password</label>
+  <input type="password" class="form-control" [(ngModel)]="password" required>
+  <button type="submit" (click)="tryRegister()" class="btn btn-default">Register</button>
+  <button [routerLink]="['/login']" >Login</button>
+</ion-content>
