@@ -6,5 +6,6 @@
 
 <ion-content>
   <p>Welcome {{ connectedUserId }}</p>
+  <p>You are {{ userIsVerified ? 'verified' : 'not verified' }}</p>
   <button (click)="logout()">Log out</button>
 </ion-content>

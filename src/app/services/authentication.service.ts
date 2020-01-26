@@ -59,7 +59,7 @@ export class AuthenticationService {
     }
 
     watchUser() {
-        return new Promise<any>((resolve, reject) => {
+        return new Promise<firebase.User>((resolve, reject) => {
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
                     resolve(user);
